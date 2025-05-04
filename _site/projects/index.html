@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Scott Macdonald</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="text-center py-5">
+  <img src="https://gravatar.com/userimage/1638636/abc867ff19ed584e9384e2cca59b412c.jpeg?size=256&cache=1746383368233" alt="Scott Macdonald" class="profile-img mb-3">
+  <h1>Scott Macdonald</h1>
+  <p>Solutions-oriented IT professional</p>
+</header>
+<main class="container">
+<section>
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>Portfolio Builder:</strong> A web app to help designers create beautiful portfolios without coding. <a href="#">View Project</a></li>
+    <li><strong>NoteSpace:</strong> A minimalist, markdown-powered note-taking tool for creatives. <a href="#">View Project</a></li>
+  </ul>
+</section>
+</main>
+<footer class="text-center">
+  &copy; 2025 Scott Macdonald. Hosted on GitHub Pages.
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('section').forEach(section => observer.observe(section));
+</script>
+</body>
+</html>
